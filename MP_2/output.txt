@@ -1,0 +1,13 @@
+userfile does not exists
+userfile created
+Server listening on 127.0.0.1:3010
+User not found in userFiles/users.txt
+added u1 to users.txt
+User files added
+added u1 to u1_followers.txt
+User not found in userFiles/users.txt
+added u2 to users.txt
+User files added
+added u2 to u2_followers.txt
+User found in userFiles/users.txt
+User found in userFiles/users.txt
