@@ -172,6 +172,20 @@ std::vector<Message> getPostsFromFile(std::string filename){
   
 }
 
+void removePostsfromUserTimeline(std::string username, std::string unfollowed){
+  std::vector<Message> userPosts = getPostsFromFile(username+"_timeline.txt");
+  std::ofstream outfile;
+  outfile.open("userFiles/"+username+"_timeline.txt");
+  outfile.close();
+  for (std::vector<Message>::reverse_iterator it = userPosts.rbegin(); it != userPosts.rend(); it++){
+    auto post = *it;
+    if (post.username() != unfollowed){
+      addPostToFile(post,username+"_timeline.txt");
+    }
+  }
+  
+}
+
 
 
 class SNSServiceImpl final : public SNSService::Service {
@@ -248,6 +262,7 @@ class SNSServiceImpl final : public SNSService::Service {
       if (doesUserExistInFile(username,followed+"_followers.txt")==true && doesUserExistInFile(followed,username+"_following.txt")==true){
         removeUserFromFile(username,followed+"_followers.txt");
         removeUserFromFile(followed,username+"_following.txt");
+        removePostsfromUserTimeline(username,followed);
         message = "1";
       }
       else{
@@ -277,6 +292,7 @@ class SNSServiceImpl final : public SNSService::Service {
       
       addUserFiles(username);
       addUsertoFile(username,username+"_followers.txt");
+      addUsertoFile(username,username+"_following.txt");
       
     }
     
@@ -304,8 +320,11 @@ class SNSServiceImpl final : public SNSService::Service {
       //stream->Write(note);
       username = note.username();
       std::vector<std::string> followers;
+      std::vector<std::string> following;
       
       if (umap.find(username) == umap.end()){
+        following = getUsersFromFile(username+"_following.txt");
+        std::unordered_set<std::string> followingSet(following.begin(), following.end());
         umap[username]=stream;
         std::vector<Message> posts = getPostsFromFile(username+"_timeline.txt");
         int count = 0;
@@ -313,8 +332,10 @@ class SNSServiceImpl final : public SNSService::Service {
           if (count == 20){
             break;
           }
+          else if (followingSet.find((*it).username())!=followingSet.end()){
             stream->Write(*it);
             count++;
+          }
         }
         
       }
@@ -322,12 +343,10 @@ class SNSServiceImpl final : public SNSService::Service {
       followers = getUsersFromFile(username+"_followers.txt");
       for (std::vector<std::string>::iterator t = followers.begin(); t != followers.end(); ++t){
         std::string element = t->c_str();
-        if (element != username){
-          addPostToFile(note,element+"_timeline.txt");
-          if (umap.find(element) != umap.end()){
-            auto newStream = umap[element];
-            newStream->Write(note);
-          }
+        addPostToFile(note,element+"_timeline.txt");
+        if (umap.find(element) != umap.end() && element != username){
+          auto newStream = umap[element];
+          newStream->Write(note);
         }
       }
       }
