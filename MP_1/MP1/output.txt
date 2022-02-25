@@ -1,0 +1,286 @@
+Listener on port 8080 
+Waiting for connections ...
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 36330 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret JOIN
+eol 7 
+subtext kr1k 
+rooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkrooms j kkJOIN index: 64 roomName JOIN r1 
+reply is JOINreceived JOIN r1 from 4 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 2 
+New connection , socket fd is 5 , ip is : 172.31.13.219 , port : 36332 
+Adding to list of sockets as 1, fd is 5
+Host disconnected , ip 172.31.13.219 , port 36330 
+activity 1 
+ret LIST
+received LIST from 5 
+waiting for morecomp LIST CREATE 
+comp LIST JOIN 
+comp LIST DELETE 
+comp LIST LIST 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 36332 
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 36334 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret CREATEeol 9 
+subtext r1 
+index: 0 roomName r1 
+reply is CREATEreceived CREATE r1 from 4 
+waiting for morecomp CREATE CREATE 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 36334 
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 36336 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret LIST
+received LIST from 4 
+waiting for morecomp LIST CREATE 
+comp LIST JOIN 
+comp LIST DELETE 
+comp LIST LIST 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 36336 
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 36338 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret JOIN
+eol 7 
+subtext kr1k 
+rooms j kr1kroom is present 
+JOIN index: 0 roomName r1 
+reply is JOINreceived JOIN r1 from 4 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 36338 
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 36340 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret CREATEeol 9 
+subtext r1 
+repeat found 
+reply is CREATEreceived CREATE r1 from 4 
+waiting for morecomp CREATE CREATE 
+activity 2 
+New connection , socket fd is 5 , ip is : 172.31.13.219 , port : 36342 
+Adding to list of sockets as 1, fd is 5
+Host disconnected , ip 172.31.13.219 , port 36340 
+activity 1 
+ret JOIN
+eol 7 
+subtext kr1k 
+rooms j kr1kroom is present 
+JOIN index: 0 roomName r1 
+reply is JOINreceived JOIN r1 from 5 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 36344 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret LIST
+received LIST from 4 
+waiting for morecomp LIST CREATE 
+comp LIST JOIN 
+comp LIST DELETE 
+comp LIST LIST 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 36344 
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 36346 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret JOIN
+eol 7 
+subtext kr1k 
+rooms j kr1kroom is present 
+JOIN index: 0 roomName r1 
+reply is JOINreceived JOIN r1 from 4 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 1 
+received hello
+ from 5 
+gonna send messaagessending hello
+ to 4 
+activity 1 
+received hello
+ from 4 
+gonna send messaagessending hello
+ to 5 
+activity 1 
+New connection , socket fd is 7 , ip is : 172.31.13.219 , port : 36348 
+Adding to list of sockets as 2, fd is 7
+activity 1 
+ret DELETE
+room found to be deleted is 0 sd is 4sending Warning, the chatting room is going to be closed...
+ to 4 
+room found to be deleted is 0 sd is 5sending Warning, the chatting room is going to be closed...
+ to 5 
+reply is DELETEreceived DELETE r1 from 7 
+waitingListener on port 8080 
+Waiting for connections ...
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 53666 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret CREATEeol 9 
+subtext r2 
+index: 0 roomName r2 
+reply is CREATEreceived CREATE r2 from 4 
+waiting for morecomp CREATE CREATE 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 53666 
+activity 1 
+New connection , socket fd is 4 , ip is : 172.31.13.219 , port : 53668 
+Adding to list of sockets as 0, fd is 4
+activity 1 
+ret JOIN
+eol 7 
+subtext kr2k 
+rooms j kr2kroom is present 
+JOIN index: 0 roomName r2 
+reply is JOINreceived JOIN r2 from 4 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 1 
+New connection , socket fd is 5 , ip is : 172.31.13.219 , port : 53670 
+Adding to list of sockets as 1, fd is 5
+activity 1 
+ret JOIN
+eol 7 
+subtext kr2k 
+rooms j kr2kroom is present 
+JOIN index: 0 roomName r2 
+reply is JOINreceived JOIN r2 from 5 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 1 
+received hello
+ from 5 
+gonna send messaagessending hello
+ to 4 
+activity 1 
+received hi
+ from 4 
+gonna send messaagessending hi
+ to 5 
+activity 1 
+received how are you
+ from 5 
+gonna send messaagessending how are you
+ to 4 
+activity 1 
+received good\
+ from 4 
+gonna send messaagessending good\
+ to 5 
+activity 1 
+New connection , socket fd is 7 , ip is : 172.31.13.219 , port : 53672 
+Adding to list of sockets as 2, fd is 7
+activity 1 
+ret LIST
+received LIST from 7 
+waiting for morecomp LIST CREATE 
+comp LIST JOIN 
+comp LIST DELETE 
+comp LIST LIST 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 53672 
+activity 1 
+New connection , socket fd is 7 , ip is : 172.31.13.219 , port : 53674 
+Adding to list of sockets as 2, fd is 7
+activity 1 
+ret CREATEeol 9 
+subtext r1 
+index: 1 roomName r1 
+reply is CREATEreceived CREATE r1 from 7 
+waiting for morecomp CREATE CREATE 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 53674 
+activity 1 
+New connection , socket fd is 7 , ip is : 172.31.13.219 , port : 53676 
+Adding to list of sockets as 2, fd is 7
+activity 1 
+ret JOIN
+eol 7 
+subtext kr1k 
+rooms j kr2krooms j kr1kroom is present 
+JOIN index: 1 roomName r1 
+reply is JOINreceived JOIN r1 from 7 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 1 
+New connection , socket fd is 8 , ip is : 172.31.13.219 , port : 53678 
+Adding to list of sockets as 3, fd is 8
+activity 1 
+ret LIST
+received LIST from 8 
+waiting for morecomp LIST CREATE 
+comp LIST JOIN 
+comp LIST DELETE 
+comp LIST LIST 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 53678 
+activity 1 
+New connection , socket fd is 8 , ip is : 172.31.13.219 , port : 53680 
+Adding to list of sockets as 3, fd is 8
+activity 1 
+ret JOIN
+eol 7 
+subtext kr1k 
+rooms j kr2krooms j kr1kroom is present 
+JOIN index: 1 roomName r1 
+reply is JOINreceived JOIN r1 from 8 
+comp JOIN CREATE 
+comp JOIN JOIN 
+activity 1 
+received hi
+ from 8 
+gonna send messaagessending hi
+ to 7 
+activity 1 
+received this is chatoom r1
+ from 8 
+gonna send messaagessending this is chatoom r1
+ to 7 
+activity 1 
+received this is chatroom r2
+ from 4 
+gonna send messaagessending this is chatroom r2
+ to 5 
+activity 1 
+Host disconnected , ip 172.31.13.219 , port 53680 
+activity 1 
+New connection , socket fd is 8 , ip is : 172.31.13.219 , port : 53682 
+Adding to list of sockets as 3, fd is 8
+activity 1 
+ret DELETE
+room found to be deleted is 1 sd is 7sending Warning, the chatting room is going to be closed...
+ to 7 
+reply is DELETEreceived DELETE r1 from 8 
+waiting for morecomp DELETE CREATE 
+comp DELETE JOIN 
+comp DELETE DELETE 
+activity 3 
+New connection , socket fd is 9 , ip is : 172.31.13.219 , port : 53684 
+Adding to list of sockets as 4, fd is 9
+Host disconnected , ip 172.31.13.219 , port 53676 
+Host disconnected , ip 172.31.13.219 , port 53682 
+activity 1 
+New connection , socket fd is 7 , ip is : 172.31.13.219 , port : 53686 
+Adding to list of sockets as 2, fd is 7
+activity 1 
+ret DELETE
+room found to be deleted is 0 sd is 4sending Warning, the chatting room is going to be closed...
+ to 4 
+room found to be deleted is 0 sd is 5sending Warning, the c
