@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package synch;
+
+import "google/protobuf/timestamp.proto";
+
+service SNSSynchronizer{
+  rpc newFollow (syncReq) returns (syncRep) {}
+  rpc newUsers (syncReq) returns (syncRep) {}
+  rpc newPost (Message) returns (syncRep) {}
+}
+
+message syncReq {
+    string username = 1;
+    repeated string arguments = 2;
+}
+
+message syncRep {
+    string msg=1;
+}
+
+message Message {
+  string username = 1;
+  string msg = 2;
+  google.protobuf.Timestamp timestamp = 3;
+  string recipient = 4;
+}
