@@ -502,7 +502,7 @@ int main(int argc, char** argv) {
        //stream->Write(heartbeat);
         std::cout<<"performing sync"<<std::endl;
         performSync();
-        std::this_thread::sleep_for(std::chrono::seconds(2)); 
+        std::this_thread::sleep_for(std::chrono::seconds(30)); 
        }
         
     });
