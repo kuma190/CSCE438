@@ -1,4 +1,12 @@
 #!/bin/bash
+if [ ! -d /logfiles ]; then
+    mkdir logfiles;
+fi;
+if [ ! -d /userfiles ]; then
+    mkdir userfiles;
+fi;
+
+sleep 0.1
 
 ./coordinator &
 sleep 0.1

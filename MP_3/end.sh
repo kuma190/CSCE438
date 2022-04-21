@@ -15,5 +15,5 @@ kill -9 $(pgrep -f './synchronizer -i 1 -m 9790' | head -1)
 kill -9 $(pgrep -f './synchronizer -i 2 -m 9890' | head -1)
 kill -9 $(pgrep -f './synchronizer -i 3 -m 9990' | head -1)
 
-rm -rf logfiles/*
-rm -rf userfiles/*
+rm -r logfiles
+rm -r userfiles
